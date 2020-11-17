@@ -106,6 +106,16 @@ a:hover {
 }
 
 /*!
+ * 松江市からのお知らせ
+ */
+ #notice_list {
+	color: #0000FF;
+	text-decoration: underline;
+	word-break: break-all;
+}
+
+
+/*!
  * 5374.jpについて
  */
 #accordion3 a.accordion-toggle-top {
