@@ -108,10 +108,10 @@ a:hover {
 /*!
  * 松江市からのお知らせ
  */
- #notice_list {
-	color: #0000FF;
+ #accordion3 .notice_list li{
 	text-decoration: underline;
 	word-break: break-all;
+	margin: 0 0 8px 0;
 }
 
 
