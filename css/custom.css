@@ -28,15 +28,7 @@ a:hover {
 .accordion-inner {
 	padding: 2px 8px;
 	font-size: 16px;
-	/*!font-weight: bold;*/
-}
-
-/*!
- * 地区ドロップダウン
- */
- .form-control {
-	 
-	color: #FF0000;
+	//font-weight: bold;
 }
 
 /*!
@@ -112,16 +104,6 @@ a:hover {
     /* ◇フォントサイズ追加 */
 	font-size: 1.5em;
 }
-
-/*!
- * 松江市からのお知らせ
- */
- #accordion3 .notice_list li{
-	text-decoration: underline;
-	word-break: break-all;
-	margin: 0 0 8px 0;
-}
-
 
 /*!
  * 5374.jpについて
