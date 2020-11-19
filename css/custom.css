@@ -33,11 +33,12 @@ a:hover {
 
 /*!
  * 地区ドロップダウン
+*/ 
  .form-control {
 	 
-	color: #FF0000;
+	background-color: #FF0000;
 }
-*/
+
 
 /*!
  * ゴミ収集の情報
