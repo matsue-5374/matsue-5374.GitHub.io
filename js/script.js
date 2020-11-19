@@ -793,12 +793,12 @@ $(function() {
 
     if (group_name == -1) {
       setSelectedGroupName(-1);
-      $("#accordion").html("");
+      $("#accordion").html("<p>※※リストからエリアを選択してください※※</p></bk>");
       return;
     }
     if (area_name == -1) {
       setSelectedAreaName(-1);
-      $("#accordion").html("");
+      $("#accordion").html("<p>※※リストからエリアを選択してください※※</p></bk>");
       return;
     }
     setSelectedGroupName(group_name);
