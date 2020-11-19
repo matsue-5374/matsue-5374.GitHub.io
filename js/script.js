@@ -561,7 +561,6 @@ $(function() {
     var $select_group = $('#select_group');
     var selected_group = $select_group.val();
     $select_area.hide();
-
     var options_html = '<option value="-1" selected="selected">橋北・橋南を選択してください</option>';
     for (var i in groupOrder) {
       var group = groupOrder[i];
@@ -570,13 +569,12 @@ $(function() {
 
     $select_group.change(function (elem) {
       if ($select_group.val() == -1) {
-        $select_group.style.color = '#0000FF';
         $select_area.val(-1);
         $select_area.hide();
         return;
       }
       createAreaSelect();
-      $("#accordion").html("<p>※※リストからエリアを選択してください※※</p></bk>");
+      $("#accordion").html("");
       $select_area.show();
       $select_area.val(-1);
       $select_area.change();
@@ -795,12 +793,12 @@ $(function() {
 
     if (group_name == -1) {
       setSelectedGroupName(-1);
-      $("#accordion").html("<p>※※リストからエリアを選択してください※※</p></bk>");
+      $("#accordion").html("");
       return;
     }
     if (area_name == -1) {
       setSelectedAreaName(-1);
-      $("#accordion").html("<p>※※リストからエリアを選択してください※※</p></bk>");
+      $("#accordion").html("");
       return;
     }
     setSelectedGroupName(group_name);
