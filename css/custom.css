@@ -124,6 +124,12 @@ a:hover {
 	margin: 0 0 8px 0;
 }
 
+#accordion3 .link_area{
+	color: #0000FF;
+	text-decoration: underline;
+	word-break: break-all;
+}
+
 
 /*!
  * 5374.jpについて
