@@ -793,16 +793,18 @@ $(function() {
 
     if (group_name == -1) {
       setSelectedGroupName(-1);
-      $("#accordion").html("<p>※※リストからエリアを選択してください※※</p></bk>");
+      $("#accordion").html("");
       return;
     }
     if (area_name == -1) {
       setSelectedAreaName(-1);
-      $("#accordion").html("<p>※※リストからエリアを選択してください※※</p></bk>");
+      $("#accordion").html("");
       return;
     }
     setSelectedGroupName(group_name);
     setSelectedAreaName(area_name);
+
+    alert("★" + $("#accordion").children().length + "★" + descriptions.length);
 
     if ($("#accordion").children().length === 0 && descriptions.length === 0) {
 
