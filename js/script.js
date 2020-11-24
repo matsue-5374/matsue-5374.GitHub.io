@@ -574,7 +574,9 @@ $(function() {
         return;
       }
       createAreaSelect();
-      $("#accordion").html("");
+      //★$("#accordion").html("");
+      $("#accordion").html("※※地域を選択してください。※※");
+
       $select_area.show();
       $select_area.val(-1);
       $select_area.change();
@@ -793,18 +795,20 @@ $(function() {
 
     if (group_name == -1) {
       setSelectedGroupName(-1);
-      $("#accordion").html("");
+      //★$("#accordion").html("");
+      $("#accordion").html("※※リストからエリアを選択してください。※※");
       return;
     }
     if (area_name == -1) {
       setSelectedAreaName(-1);
-      $("#accordion").html("");
+      //★$("#accordion").html("");
+      $("#accordion").html("※※リストからエリアを選択してください。※※");
       return;
     }
     setSelectedGroupName(group_name);
     setSelectedAreaName(area_name);
 
-    //alert("★" + $("#accordion").children().length + "★" + descriptions.length);
+    alert("★" + $("#accordion").children().length + "★" + descriptions.length);
 
     if ($("#accordion").children().length === 0 && descriptions.length === 0) {
 
