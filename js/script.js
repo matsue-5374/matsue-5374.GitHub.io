@@ -584,7 +584,11 @@ $(function() {
     $select_group.val(value);
     createAreaSelect();
     console.log(value);
-    if (value != -1) { $select_area.show(); }
+    if (value != -1) {
+      /* ☆ */
+      $select_group.styles="height:20px";
+       $select_area.show(); 
+      }
     $select_area.val(getSelectedAreaName());
     onChangeSelect(getSelectedGroupName(), getSelectedAreaName());
   }
