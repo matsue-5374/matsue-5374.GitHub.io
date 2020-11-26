@@ -67,7 +67,7 @@ a:hover {
 	font-size: 24px;
 	font-weight: bold;
 	/* ◇ 0614 */
-	//height: 105px;
+	/*height: 105px;*/
 }
 #accordion .accordion-heading .accordion-toggle {
 	/* ◇カラー追加 ↓ */
@@ -140,7 +140,7 @@ a:hover {
 	display: block;
 	margin: 0;
 	text-align: left;
-	//font-size: 25px;
+	/*font-size: 25px; */
 	font-size: 20px;
 
 	margin: 15px 0 15px 15px;
@@ -149,7 +149,7 @@ a:hover {
 	color: #000000;
 }
 #accordion3 h2 {
-	//font-size: 25px;
+	/* font-size: 25px; */
 	font-size: 20px;
 	margin-top: 40px;
 }
