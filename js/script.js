@@ -804,7 +804,7 @@ $(function() {
     setSelectedGroupName(group_name);
     setSelectedAreaName(area_name);
 
-    alert("★" + $("#accordion").children().value + "★" + descriptions.length);
+    alert("★" + $("#accordion").children().value + "★" + $("#accordion").children().length + "☆"+ descriptions.length);
 
 
     if ($("#accordion").children().length === 0 && descriptions.length === 0) {
