@@ -807,7 +807,8 @@ $(function() {
     alert("★" + $("#accordion").children().value + "★" + $("#accordion").children().length + "☆"+ descriptions.length);
 
 
-    if ($("#accordion").children().length === 0 && descriptions.length === 0) {
+    //if ($("#accordion").children().length === 0 && descriptions.length === 0) {
+    if ($("#accordion").children().value === undefined && descriptions.length === 0) {
 
       createMenuList(function() {
         updateData(group_name, area_name);
