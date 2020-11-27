@@ -575,13 +575,26 @@ $(function() {
       }
       createAreaSelect();
       $("#accordion").html("");
+
+      /**↓↓★★★↓↓ */
+      
+      var selectGroup = document.getElementById("select_group");
+      selectGroup.style.height = "14px";
+      /**↑↑★★★↑↑ */
+
       $select_area.show();
       $select_area.val(-1);
       $select_area.change();
     });
     $select_group.html(options_html);
     var value = getSelectedGroupName();
+    /**↓↓★★↓↓ */
+    //$select_group
+
+    /**↑↑★★↑↑ */
+
     $select_group.val(value);
+
     createAreaSelect();
     console.log(value);
     if (value != -1) {
