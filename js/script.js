@@ -605,8 +605,13 @@ $(function() {
       /**↑↑★★★↑↑ */
       }
 
+    var valueArea = getSelectedGroupName();
+    if (valueArea != -1) {
+      var selectArea = document.getElementById("select_area");
+      selectArea.style.height = "34px";
+    }
 
-    $select_area.val(getSelectedAreaName());
+    $select_area.val(valueArea);
 
     onChangeSelect(getSelectedGroupName(), getSelectedAreaName());
   }
