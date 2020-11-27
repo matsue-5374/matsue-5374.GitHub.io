@@ -568,11 +568,11 @@ $(function() {
     }
 
     $select_group.change(function (elem) {
+      var selectGroup = document.getElementById("select_group");      
       if ($select_group.val() == -1) {
-      /**↓↓★★★↓↓ */
-      var selectGroup = document.getElementById("select_group");
-      selectGroup.style.height = "60px";
-      /**↑↑★★★↑↑ */
+        /**↓↓★★★↓↓ */
+        selectGroup.style.height = "60px";
+        /**↑↑★★★↑↑ */
         $select_area.val(-1);
         $select_area.hide();
         return;
