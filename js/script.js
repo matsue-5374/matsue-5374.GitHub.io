@@ -569,38 +569,45 @@ $(function() {
 
     $select_group.change(function (elem) {
       if ($select_group.val() == -1) {
+      /**↓↓★★★↓↓ */
+      var selectGroup = document.getElementById("select_group");
+      selectGroup.style.height = "60px";
+      /**↑↑★★★↑↑ */
         $select_area.val(-1);
         $select_area.hide();
         return;
       }
       createAreaSelect();
       $("#accordion").html("");
-
       /**↓↓★★★↓↓ */
-      
-      var selectGroup = document.getElementById("select_group");
-      selectGroup.style.height = "14px";
+      var selectArea = document.getElementById("select_area");
+      selectArea.style.height = "60px";
       /**↑↑★★★↑↑ */
-
       $select_area.show();
       $select_area.val(-1);
       $select_area.change();
     });
     $select_group.html(options_html);
     var value = getSelectedGroupName();
-    /**↓↓★★↓↓ */
-    //$select_group
-
-    /**↑↑★★↑↑ */
-
+    /**↓↓★★★↓↓ */
+    var selectGroup = document.getElementById("select_group");
+    selectGroup.style.height = "34px";
+    /**↑↑★★★↑↑ */
     $select_group.val(value);
 
     createAreaSelect();
     console.log(value);
     if (value != -1) {
-       $select_area.show(); 
+       $select_area.show();
+      /**↓↓★★★↓↓ */
+      var selectArea = document.getElementById("select_area");
+      selectArea.style.height = "60px";
+      /**↑↑★★★↑↑ */
       }
+
+
     $select_area.val(getSelectedAreaName());
+
     onChangeSelect(getSelectedGroupName(), getSelectedAreaName());
   }
 
@@ -617,6 +624,11 @@ $(function() {
     }
     $select_area.html(select_html);
     $select_area.insertAfter($select_group);
+
+    /**↓↓★★★↓↓ */
+    var selectArea = document.getElementById("select_area");
+    selectArea.style.height = "34px";
+    /**↑↑★★★↑↑ */
     $select_area.val(selected_name);
   }
 
