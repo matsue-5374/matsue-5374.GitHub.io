@@ -597,17 +597,17 @@ $(function() {
 
     createAreaSelect();
     console.log(value);
+    var selectArea = document.getElementById("select_area");
+
     if (value != -1) {
        $select_area.show();
       /**↓↓★★★↓↓ */
-      var selectArea = document.getElementById("select_area");
       selectArea.style.height = "60px";
       /**↑↑★★★↑↑ */
       }
 
-    var valueArea = getSelectedGroupName();
+    var valueArea = getSelectedAreaName();
     if (valueArea != -1) {
-      var selectArea = document.getElementById("select_area");
       selectArea.style.height = "34px";
     }
 
