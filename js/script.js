@@ -568,10 +568,7 @@ $(function() {
     }
 
     $select_group.change(function (elem) {
-      alert("①☆");
       if ($select_group.val() == -1) {
-
-        alert("②☆");
         $select_group.removeClass("selno");
         $select_group.addClass("selact");
 
@@ -579,7 +576,6 @@ $(function() {
         $select_area.hide();
         return;
       } else {
-        alert("③☆");
         $select_group.removeClass("selact");
         $select_group.addClass("selno");
       }
@@ -593,14 +589,7 @@ $(function() {
     $select_group.html(options_html);
     var value = getSelectedGroupName();
 
-    if (value != -1) {
-        alert("④☆");
-      $select_group.removeClass("selact");
-      $select_group.addClass("selno");
-
-      $select_area.show();
-     } else {
-        alert("⑤☆");       
+    if (value == -1) {
         $select_group.removeClass("selno");
         $select_group.addClass("selact");
      }
