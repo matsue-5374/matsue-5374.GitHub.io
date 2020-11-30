@@ -568,10 +568,10 @@ $(function() {
     }
 
     $select_group.change(function (elem) {
-      var selectGroup = document.getElementById("select_group");      
+      alert("①★");
       if ($select_group.val() == -1) {
 
-        alert("①☆");       
+        alert("②★");
         $select_group.removeClass("selno");
         $select_group.addClass("selact");
 
@@ -590,13 +590,13 @@ $(function() {
     var value = getSelectedGroupName();
 
     if (value != -1) {
-        alert("②☆");      
+        alert("③★");      
       $select_group.removeClass("selact");
       $select_group.addClass("selno");
 
       $select_area.show();
      } else {
-        alert("③☆");       
+        alert("④★");       
         $select_group.removeClass("selno");
         $select_group.addClass("selact");
      }
