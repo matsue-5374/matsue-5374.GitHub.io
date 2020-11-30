@@ -568,16 +568,20 @@ $(function() {
     }
 
     $select_group.change(function (elem) {
-      alert("①★");
+      alert("①☆");
       if ($select_group.val() == -1) {
 
-        alert("②★");
+        alert("②☆");
         $select_group.removeClass("selno");
         $select_group.addClass("selact");
 
         $select_area.val(-1);
         $select_area.hide();
         return;
+      } else {
+        alert("③☆");
+        $select_group.removeClass("selact");
+        $select_group.addClass("selno");
       }
 
       createAreaSelect();
@@ -590,13 +594,13 @@ $(function() {
     var value = getSelectedGroupName();
 
     if (value != -1) {
-        alert("③★");      
+        alert("④☆");
       $select_group.removeClass("selact");
       $select_group.addClass("selno");
 
       $select_area.show();
      } else {
-        alert("④★");       
+        alert("⑤☆");       
         $select_group.removeClass("selno");
         $select_group.addClass("selact");
      }
