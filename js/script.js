@@ -868,6 +868,17 @@ $(function() {
   $("#select_area").change(function(data) {
     var area_name = $(data.target).val();
     var group_name = $("#select_group").val();
+
+    if (area_name == -1) {
+      alert("⑥");
+      $select_area.removeClass("selno");
+      $select_area.addClass("selact");
+    } else {
+      alert("⑦");
+      $select_area.removeClass("selact");
+      $select_area.addClass("selno");
+    }
+
     onChangeSelect(group_name, area_name);
   });
 
