@@ -603,12 +603,7 @@ $(function() {
        $select_area.show();
       }
 
-
-
     $select_area.val(getSelectedAreaName());
-    $select_area.addClass("kurasu");
-    $select_area.rem
-
     onChangeSelect(getSelectedGroupName(), getSelectedAreaName());
   }
 
