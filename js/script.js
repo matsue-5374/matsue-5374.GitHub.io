@@ -591,13 +591,7 @@ $(function() {
     if (value != -1) {
        $select_area.show();
       }
-
-    var valueArea = getSelectedAreaName();
-    if (valueArea != -1) {
-      selectArea.style.height = "34px";
-    }
-
-    $select_area.val(valueArea);
+    $select_area.val(getSelectedAreaName());
 
     onChangeSelect(getSelectedGroupName(), getSelectedAreaName());
   }
