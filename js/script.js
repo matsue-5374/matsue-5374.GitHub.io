@@ -592,9 +592,9 @@ $(function() {
     $select_group.html(options_html);
     var value = getSelectedGroupName();
 
-    if (value == -1) {
-        $select_group.removeClass("selno");
-        $select_group.addClass("selact");
+    if (value != -1) {
+        $select_group.removeClass("selact");
+        $select_group.addClass("selno");
      }
 
     $select_group.val(value);
