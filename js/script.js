@@ -601,7 +601,7 @@ $(function() {
 
     createAreaSelect();
     console.log(value);
-
+    if (value != -1) { $select_area.show(); }
     $select_area.val(getSelectedAreaName());
     onChangeSelect(getSelectedGroupName(), getSelectedAreaName());
   }
@@ -627,7 +627,6 @@ $(function() {
       $select_area.removeClass("selno");
       $select_area.addClass("selact");
     }
-
     $select_area.val(selected_name);
   }
 
@@ -832,7 +831,6 @@ $(function() {
 
     //alert("★" + $("#accordion").children().value + "★" + $("#accordion").children().length + "☆"+ descriptions.length);
 
-
     //if ($("#accordion").children().length === 0 && descriptions.length === 0) {
     if ($("#accordion").children().value === undefined && descriptions.length === 0) {
 
@@ -843,8 +841,6 @@ $(function() {
       updateData(group_name, area_name);
     }
   }
-
-
 
   function getAreaIndex(area_name) {
     for (var i in areaModels) {
