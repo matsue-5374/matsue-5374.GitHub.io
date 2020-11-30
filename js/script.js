@@ -570,6 +570,7 @@ $(function() {
     $select_group.change(function (elem) {
       var selectGroup = document.getElementById("select_group");      
       if ($select_group.val() == -1) {
+        alert("①");
         $select_group.removeClass("selno");
         $select_group.addClass("selact");
 
@@ -577,6 +578,7 @@ $(function() {
         $select_area.hide();
         return;
       } else {
+        alert("②");
         $select_group.removeClass("selact");
         $select_group.addClass("selno");
       }
