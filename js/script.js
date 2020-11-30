@@ -876,9 +876,11 @@ $(function() {
    //   $select_area.removeClass("selno");
    //   $select_area.addClass("selact");
    // } else {
-      alert("⑧");
-      $select_area.removeClass("selact");
-      $select_area.addClass("selno");
+      alert("⑧☆");
+      var selectArea = document.getElementById("select_area");
+
+      selectArea.removeClass("selact");
+      selectArea.addClass("selno");
    // }
 
     onChangeSelect(group_name, area_name);
