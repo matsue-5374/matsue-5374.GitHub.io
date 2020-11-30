@@ -843,6 +843,13 @@ $(function() {
     setSelectedGroupName(group_name);
     setSelectedAreaName(area_name);
 
+    alert("⑧☆☆");
+    var selectArea = document.getElementById("select_area");
+
+    selectArea.removeClass("selact");
+    selectArea.addClass("selno");
+
+
     //alert("★" + $("#accordion").children().value + "★" + $("#accordion").children().length + "☆"+ descriptions.length);
 
     //if ($("#accordion").children().length === 0 && descriptions.length === 0) {
@@ -876,11 +883,7 @@ $(function() {
    //   $select_area.removeClass("selno");
    //   $select_area.addClass("selact");
    // } else {
-      alert("⑧☆");
-      var selectArea = document.getElementById("select_area");
 
-      selectArea.removeClass("selact");
-      selectArea.addClass("selno");
    // }
 
     onChangeSelect(group_name, area_name);
