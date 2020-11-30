@@ -583,6 +583,7 @@ $(function() {
       createAreaSelect();
       $("#accordion").html("");
       $select_area.show();
+      alert("①");
       $select_area.removeClass("selno");
       $select_area.addClass("selact");
 
@@ -593,15 +594,26 @@ $(function() {
     var value = getSelectedGroupName();
 
     if (value == -1) {
-        $select_group.removeClass("selno");
-        $select_group.addClass("selact");
-     }
+      $select_group.removeClass("selno");
+      $select_group.addClass("selact");
+    }
 
     $select_group.val(value);
 
     createAreaSelect();
     console.log(value);
-    if (value != -1) { $select_area.show(); }
+    if (value != -1) {
+       $select_area.show();
+    }
+
+    var valueArea = getSelectedAreaName();
+
+    if (valueArea != -1) {
+      alert("②");
+      $select_area.removeClass("selact");
+      $select_area.addClass("selno");
+    }
+
     $select_area.val(getSelectedAreaName());
     onChangeSelect(getSelectedGroupName(), getSelectedAreaName());
   }
@@ -621,9 +633,11 @@ $(function() {
     $select_area.insertAfter($select_group);
 
     if (selected_name == -1) {
-      $select_area.removeClass("selact");
-      $select_area.addClass("selno");
+      alert("③");
+      $select_area.removeClass("selno");
+      $select_area.addClass("selact");
     } else {
+      alert("④");
       $select_area.removeClass("selno");
       $select_area.addClass("selact");
     }
