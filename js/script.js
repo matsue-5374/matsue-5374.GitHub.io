@@ -583,6 +583,9 @@ $(function() {
       createAreaSelect();
       $("#accordion").html("");
       $select_area.show();
+      $select_area.removeClass("selno");
+      $select_area.addClass("selact");
+
       $select_area.val(-1);
       $select_area.change();
     });
@@ -616,6 +619,15 @@ $(function() {
     }
     $select_area.html(select_html);
     $select_area.insertAfter($select_group);
+
+    if (selected_name == -1) {
+      $select_area.removeClass("selact");
+      $select_area.addClass("selno");
+    } else {
+      $select_area.removeClass("selno");
+      $select_area.addClass("selact");
+    }
+
     $select_area.val(selected_name);
   }
 
