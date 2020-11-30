@@ -41,6 +41,14 @@ a:hover {
 	background-color: #498de8;
 }
 
+.selact {
+	height:60px;
+}
+
+.selno {
+	height:34px;
+}
+
 /*!
  * ゴミ収集の情報
  */
