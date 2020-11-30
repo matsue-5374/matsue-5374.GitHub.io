@@ -585,9 +585,12 @@ $(function() {
     // ★★↓↓
 
     if (value == -1) {
+      alert("①" + value);
+
       $select_group.addClass("selact")
       $select_area.show();
      } else {
+      alert("②" + value);
       $select_group.removeClass("selact")
       $select_group.addClass("selno")
      }
