@@ -582,17 +582,32 @@ $(function() {
     });
     $select_group.html(options_html);
     var value = getSelectedGroupName();
+    // ★★↓↓
+
+    if (value == -1) {
+      $select_group.addClass("selact")
+      $select_area.show();
+     } else {
+      $select_group.removeClass("selact")
+      $select_group.addClass("selno")
+     }
+
+    // ★★↑↑
     $select_group.val(value);
 
     createAreaSelect();
     console.log(value);
-    var selectArea = document.getElementById("select_area");
+
 
     if (value != -1) {
        $select_area.show();
       }
+
+
+
     $select_area.val(getSelectedAreaName());
     $select_area.addClass("kurasu");
+    $select_area.rem
 
     onChangeSelect(getSelectedGroupName(), getSelectedAreaName());
   }
