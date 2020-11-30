@@ -869,15 +869,17 @@ $(function() {
     var area_name = $(data.target).val();
     var group_name = $("#select_group").val();
 
-    if (area_name == -1) {
-      alert("⑥");
-      $select_area.removeClass("selno");
-      $select_area.addClass("selact");
-    } else {
-      alert("⑦");
+    alert("⑥" + area_name);
+
+   // if (area_name == -1) {
+   //   alert("⑦");
+   //   $select_area.removeClass("selno");
+   //   $select_area.addClass("selact");
+   // } else {
+      alert("⑧");
       $select_area.removeClass("selact");
       $select_area.addClass("selno");
-    }
+   // }
 
     onChangeSelect(group_name, area_name);
   });
