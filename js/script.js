@@ -634,8 +634,8 @@ $(function() {
 
     if (selected_name == -1) {
       alert("③");
-      $select_area.removeClass("selno");
-      $select_area.addClass("selact");
+      $select_area.removeClass("selact");
+      $select_area.addClass("selno");
     } else {
       alert("④");
       $select_area.removeClass("selno");
