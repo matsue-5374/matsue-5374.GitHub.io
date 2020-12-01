@@ -829,15 +829,18 @@ $(function() {
       $("#accordion").html("<p>※※リストからエリアを選択してください※※</p></bk>");
       return;
     }
+
+    var $select_area = $('#select_area');    
     if (area_name == -1) {
+      $select_area.removeClass("selnoselact");
+      $select_area.addClass("selact");
+
       setSelectedAreaName(-1);
       $("#accordion").html("<p>※※リストからエリアを選択してください※※</p></bk>");
       return;
     }
     setSelectedGroupName(group_name);
     setSelectedAreaName(area_name);
-
-    var $select_area = $('#select_area');
 
     $select_area.removeClass("selact");
     $select_area.addClass("selno");
