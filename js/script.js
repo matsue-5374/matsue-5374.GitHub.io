@@ -832,7 +832,7 @@ $(function() {
 
     var $select_area = $('#select_area');    
     if (area_name == -1) {
-      $select_area.removeClass("selnoselact");
+      $select_area.removeClass("selno");
       $select_area.addClass("selact");
 
       setSelectedAreaName(-1);
