@@ -826,7 +826,7 @@ $(function() {
 
     if (group_name == -1) {
       setSelectedGroupName(-1);
-      $("#accordion").html("<p>※※リストからエリアを選択してください※※</p></bk>");
+      $("#accordion").html('<p class="selectnote">※※リストからエリアを選択してください※※</p></bk>');
       return;
     }
 
@@ -836,7 +836,7 @@ $(function() {
       $select_area.addClass("selact");
 
       setSelectedAreaName(-1);
-      $("#accordion").html('<p style="height: 50px;">※※リストからエリアを選択してください※※</p></bk>');
+      $("#accordion").html('<p class="selectnote">※※リストからエリアを選択してください※※</p></bk>');
       return;
     }
     setSelectedGroupName(group_name);
