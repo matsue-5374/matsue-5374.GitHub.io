@@ -496,8 +496,6 @@ $(function() {
         //表示上は現れませんが、
         //金沢などの各処理センターの休止期間分は一週間ずらすという法則性のため
         //例えば第一金曜日のときは、一周ずらしその月だけ第二金曜日にする
-
-
         tmp.shift();
         for (var i in tmp) {
           var row = tmp[i];
@@ -839,23 +837,10 @@ $(function() {
     setSelectedGroupName(group_name);
     setSelectedAreaName(area_name);
 
-    alert("①☆");
-    //↓↓
-    //var selectArea = document.getElementById("select_area");
-    //selectArea.removeClass("selact");
-    //selectArea.addClass("selno");
-
     var $select_area = $('#select_area');
-
-    alert("②☆");
 
     $select_area.removeClass("selact");
     $select_area.addClass("selno");
-    alert("③☆");
-
-    //↑↑
-
-    //alert("★" + $("#accordion").children().value + "★" + $("#accordion").children().length + "☆"+ descriptions.length);
 
     //if ($("#accordion").children().length === 0 && descriptions.length === 0) {
     if ($("#accordion").children().value === undefined && descriptions.length === 0) {
@@ -880,16 +865,6 @@ $(function() {
   $("#select_area").change(function(data) {
     var area_name = $(data.target).val();
     var group_name = $("#select_group").val();
-
-    alert("⑥" + area_name);
-
-   // if (area_name == -1) {
-   //   alert("⑦");
-   //   $select_area.removeClass("selno");
-   //   $select_area.addClass("selact");
-   // } else {
-
-   // }
 
     onChangeSelect(group_name, area_name);
   });
