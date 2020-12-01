@@ -583,7 +583,6 @@ $(function() {
       createAreaSelect();
       $("#accordion").html("");
       $select_area.show();
-      alert("①");
       $select_area.removeClass("selno");
       $select_area.addClass("selact");
 
@@ -609,7 +608,6 @@ $(function() {
     var valueArea = getSelectedAreaName();
 
     if (valueArea != -1) {
-      alert("②");
       $select_area.removeClass("selact");
       $select_area.addClass("selno");
     }
@@ -633,11 +631,9 @@ $(function() {
     $select_area.insertAfter($select_group);
 
     if (selected_name == -1) {
-      alert("③");
       $select_area.removeClass("selact");
       $select_area.addClass("selno");
     } else {
-      alert("④");
       $select_area.removeClass("selno");
       $select_area.addClass("selact");
     }
@@ -843,12 +839,21 @@ $(function() {
     setSelectedGroupName(group_name);
     setSelectedAreaName(area_name);
 
-    alert("⑧☆☆");
-    var selectArea = document.getElementById("select_area");
+    alert("①☆");
+    //↓↓
+    //var selectArea = document.getElementById("select_area");
+    //selectArea.removeClass("selact");
+    //selectArea.addClass("selno");
 
-    selectArea.removeClass("selact");
-    selectArea.addClass("selno");
+    var $select_area = $('#select_area');
 
+    alert("②☆");
+
+    $select_area.removeClass("selact");
+    $select_area.addClass("selno");
+    alert("③☆");
+
+    //↑↑
 
     //alert("★" + $("#accordion").children().value + "★" + $("#accordion").children().length + "☆"+ descriptions.length);
 
